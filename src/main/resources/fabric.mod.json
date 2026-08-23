@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "cords-webhook",
+  "version": "${version}",
+  "name": "Cords Webhook",
+  "description": "Sends your current Minecraft coordinates to a Discord webhook when a configurable key is pressed.",
+  "authors": ["You"],
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.example.cordswebhook.CordsWebhookClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": ">=0.141.0"
+  }
+}
